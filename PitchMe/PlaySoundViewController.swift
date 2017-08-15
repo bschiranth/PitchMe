@@ -30,6 +30,7 @@ class PlaySoundViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         configureUI(.notPlaying)
     }
     
@@ -37,6 +38,7 @@ class PlaySoundViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupAudio()
     }
 
     @IBAction func playSoundForButton(_ sender: UIButton) {

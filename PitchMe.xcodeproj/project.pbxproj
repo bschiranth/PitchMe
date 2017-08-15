@@ -39,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C901BC041F43060300EA74AF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C901BC001F42ECE700EA74AF /* PlaySoundViewController.swift */,
+				C96679681F423B210078FB32 /* RecordSounViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		C966795A1F423B210078FB32 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +67,13 @@
 		C96679651F423B210078FB32 /* PitchMe */ = {
 			isa = PBXGroup;
 			children = (
+				C901BC041F43060300EA74AF /* ViewControllers */,
 				C901BC021F43032700EA74AF /* playsoundsviewcontroller-audio.swift */,
 				C96679661F423B210078FB32 /* AppDelegate.swift */,
-				C96679681F423B210078FB32 /* RecordSounViewController.swift */,
 				C966796A1F423B210078FB32 /* Main.storyboard */,
 				C966796D1F423B210078FB32 /* Assets.xcassets */,
 				C966796F1F423B210078FB32 /* LaunchScreen.storyboard */,
 				C96679721F423B210078FB32 /* Info.plist */,
-				C901BC001F42ECE700EA74AF /* PlaySoundViewController.swift */,
 			);
 			path = PitchMe;
 			sourceTree = "<group>";
