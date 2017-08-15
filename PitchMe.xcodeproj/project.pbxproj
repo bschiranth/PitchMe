@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C901BC011F42ECE700EA74AF /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C901BC001F42ECE700EA74AF /* PlaySoundViewController.swift */; };
 		C96679671F423B210078FB32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96679661F423B210078FB32 /* AppDelegate.swift */; };
 		C96679691F423B210078FB32 /* RecordSounViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96679681F423B210078FB32 /* RecordSounViewController.swift */; };
 		C966796C1F423B210078FB32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C966796A1F423B210078FB32 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C901BC001F42ECE700EA74AF /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
 		C96679631F423B210078FB32 /* PitchMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96679661F423B210078FB32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C96679681F423B210078FB32 /* RecordSounViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSounViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				C966796D1F423B210078FB32 /* Assets.xcassets */,
 				C966796F1F423B210078FB32 /* LaunchScreen.storyboard */,
 				C96679721F423B210078FB32 /* Info.plist */,
+				C901BC001F42ECE700EA74AF /* PlaySoundViewController.swift */,
 			);
 			path = PitchMe;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C96679691F423B210078FB32 /* RecordSounViewController.swift in Sources */,
+				C901BC011F42ECE700EA74AF /* PlaySoundViewController.swift in Sources */,
 				C96679671F423B210078FB32 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +308,7 @@
 				C96679771F423B210078FB32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
