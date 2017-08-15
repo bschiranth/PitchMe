@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordSoundViewController.swift
 //  PitchMe
 //
 //  Created by Chiranth Bangalore Sathyaprakash on 8/14/17.
@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
 
+    var audioRecorder: AVAudioRecorder!
+    
     @IBOutlet weak var tapLabel: UILabel!
     
     @IBOutlet weak var recordButton: UIButton!
@@ -36,6 +39,21 @@ class ViewController: UIViewController {
         
         stopButton.isEnabled = true
         recordButton.isEnabled = false
+        
+        //record Audio logic
+        let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
+        let recordingName = "recordedVoice.wav"
+        let pathArray = [dirPath, recordingName]
+        let filePath = URL(string: pathArray.joined(separator: "/"))
+        
+        let session = AVAudioSession.sharedInstance()
+        try! session.setCategory(AVAudioSessionCategoryPlayAndRecord, with:AVAudioSessionCategoryOptions.defaultToSpeaker)
+        
+        try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
+        audioRecorder.delegate = self //set delegate
+        audioRecorder.isMeteringEnabled = true
+        audioRecorder.prepareToRecord()
+        audioRecorder.record()
     }
     
     @IBAction func stopRecording(_ sender: Any) {
@@ -44,6 +62,7 @@ class ViewController: UIViewController {
         stopButton.isEnabled = false
         recordButton.isEnabled = true
     }
+    
 
 }
 
