@@ -54,6 +54,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="recordButton" destination="nHW-9Y-LrI" id="cAx-4s-MHi"/>
+                        <outlet property="stopButton" destination="6nR-di-wsT" id="l8k-9s-A3u"/>
                         <outlet property="tapLabel" destination="ZTO-PL-2hl" id="iep-yd-nrW"/>
                     </connections>
                 </viewController>

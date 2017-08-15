@@ -11,11 +11,24 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tapLabel: UILabel!
+    
+    @IBOutlet weak var recordButton: UIButton!
+    
+    @IBOutlet weak var stopButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
 
     @IBAction func recordSound(_ sender: Any) {
         tapLabel.text = "Recording.."
